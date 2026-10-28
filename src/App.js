@@ -5,7 +5,7 @@ function App() {
   const [employees, setEmployees] = useState([]);
 
   useEffect(() => {
-    fetch("/employees")
+    fetch("https://taskmernupdatebackend-chk47j81.back4.app/employees")
       .then(res => res.json())
       .then(data => setEmployees(data))
       .catch(err => console.error(err));
